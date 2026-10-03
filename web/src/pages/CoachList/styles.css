@@ -1,0 +1,91 @@
+#page-coach-list {
+  width: 100vw;
+  height: 100vh;
+}
+
+#seach-coaches {
+  margin-top: 3.2rem;
+}
+
+#search-coaches label {
+  color: var(--color-text-in-primary);
+}
+
+#search-coaches button {
+  width: 100%;
+  height: 5.6rem;
+  background: var(--color-secondary);
+  color: var(--color-button-text);
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font: 700 1.6rem Archivo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  margin-top: 3.2rem;
+}
+
+#search-coaches button:hover {
+  background: var(--color-secondary-dark);
+}
+
+#search-coaches .select-block + .input-block {
+  margin-top: 1.2rem;
+}
+
+#page-coach-list main {
+  margin: 3.2rem auto;
+  width: 90%;
+}
+
+@media (min-width: 700px) {
+  #page-coach-list {
+    max-width: 100%;
+  }
+
+  #search-coaches {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
+    position: absolute;
+    bottom: -28px;
+  }
+
+  #search-coaches .input-block + .input-block,
+  #search-coaches .select-block + .select-block {
+    margin-top: 0;
+  }
+
+  #page-coach-list main {
+    padding: 3.2rem 0;
+    max-width: 740px;
+    margin: 0 auto;
+  }
+
+  .coach-item header,
+  .coach-item footer {
+    padding: 3.2rem;
+  }
+
+  .coach-item > p {
+    padding: 0 3.2rem;
+  }
+
+  .coach-item footer p strong {
+    display: initial;
+    margin-left: 1.6rem;
+  }
+
+  .coach-item footer button {
+    width: 24.5rem;
+    font-size: 1.6rem;
+    justify-content: center;
+  }
+
+  .coach-item footer button img {
+    margin-right: 1.6rem;
+  }
+}
